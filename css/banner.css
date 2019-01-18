@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #BANNER
+\*------------------------------------*/
+
+.govuk-phase-banner {
+    padding-top: 17px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bfc1c3;
+}
+
+.govuk-phase-banner__content {
+    font-size: var(--font-size-paragraph-small);
+    display: table;
+    margin: 0;
+    line-height: 1.25;
+}
+
+.govuk-tag {
+    margin-right: 10px;
+    display: inline-block;
+    padding: 4px 8px 1px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    color: #fff;
+    background-color: #005ea5;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.govuk-phase-banner__text {
+    display: table-cell;
+    vertical-align: baseline;
+}
+
+.govuk-link {
+    color: #005ea5;
+}
+
+.govuk-link:hover,
+.govuk-link:active {
+    color: #2b8cc4;
+}
+
+.govuk-link:focus {
+    color: var(--color-main);
+    outline: 3px solid #ffbf47;
+    outline-offset: 0;
+    background-color: #ffbf47;
+}
+

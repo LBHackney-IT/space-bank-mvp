@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #MAIN
+\*------------------------------------*/
+
+.main {
+    margin-bottom: 50px;
+}
+
+.main header,
+.main section,
+.main aside {
+    padding: 0 1rem;
+}
+
+.box {
+    border: 1px solid #bfc1c3;
+    padding: 22px;
+    height: 100%;
+    box-shadow: 7px 7px 0 #fff, 8px 8px 0 #bfc1c3;
+    margin: 5px 25px 25px 0;
+}
+
+@media (max-width: 720px) {
+    .box {
+        padding: 22px 11px;
+    }
+}
+
+.map {
+    margin-top: 50px;
+    min-height: 1160px;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 720px) {
+    .map {
+        min-height: 720px;
+    }
+  }

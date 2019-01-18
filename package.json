@@ -1,0 +1,26 @@
+{
+  "name": "lbh-design-week-1",
+  "version": "0.1.0",
+  "description": "lbh-design-week-1",
+  "repository": "LBHackney-IT/design-week-1",
+  "author": "LBH Digital Design team",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "moveto": "^1.7.3",
+    "normalize.css": "^8.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.0",
+    "pug": "^2.0.3"
+  }
+}
