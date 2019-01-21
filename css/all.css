@@ -93,8 +93,12 @@ ul {
   background-repeat: no-repeat;
   background-position: 92% 50%;
   background-size: 16px 20px;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
   display: inline-block;
+}
+
+section .button {
+  margin-bottom: 1px;
 }
 
 .user {

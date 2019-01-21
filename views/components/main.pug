@@ -8,30 +8,29 @@ main.main
             caption You can book rooms at:
             tbody
               tr
-                th #[a(href="https://hackney.gov.uk/article/3481/Clapton-Library") Clapton Library]
+                th #[a(href="#clapton") Clapton Library]
                 td up to 25 people
               tr
-                th Shoreditch Library
+                th #[a(href="#shoreditch") Shoreditch Library]
                 td up to 25 people
               tr
-                th Dalston CLR James Library
+                th #[a(href="#dalston") Dalston CLR James Library]
                 td up to 35 people
               tr
-                th Stamford Hill Library
+                th #[a(href="#stamford") Stamford Hill Library]
                 td up to 80 people
               tr
-                th Homerton Library
+                th #[a(href="#homerton") Homerton Library]
                 td up to 100 people
               tr
-                th Stoke Newington Library
+                th #[a(href="#stoke") Stoke Newington Library]
                 td up to 130 people
       p.lbh-u-p.lbh-u-p--default Rooms cost from £7.50 per hour. Anyone can use this service.
       p.lbh-u-p.lbh-u-p--small  Notes - can go to booking form or click on library name for more room info (including picture of rooms)...
-    section
+    section#clapton
       div.box
         h2.lbh-u-h2 Clapton Library room
         p.lbh-u-p.lbh-u-p--default First floor room from X per hour. Available Monday to Saturday including some evenings.
-        a.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfr6TJo50oeOkpPmGGE6aexBRzUGQJ7Ne4Vt2Bk_wVVdrXtjA/viewform") Book a room
         table
             caption Size:
             tbody
@@ -52,90 +51,134 @@ main.main
                 td Lift to first floor
               tr
                 td Flip chart, pens and paper - available on request for an extra cost
+        a.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfr6TJo50oeOkpPmGGE6aexBRzUGQJ7Ne4Vt2Bk_wVVdrXtjA/viewform") Book a room
         h3.lbh-u-h3 Location:
-        p.lbh-u-p.lbh-u-p--default Northwold Road, E5 8RA
+        p.lbh-u-p.lbh-u-p--default Northwold Road, #[br] E5 8RA
         p.lbh-u-p.lbh-u-p--small For more information, including opening times see #[a(href="https://hackney.gov.uk/article/3481/Clapton-Library") Clapton Library].
-
-        //- p.lbh-u-p.lbh-u-p--small We look forward to meeting you
-    //- section
-    //-   div.box
-    //-     h2.lbh-u-h2 Your induction
-    //-     h3.lbh-u-h3 Time:
-    //-     p.lbh-u-p.lbh-u-p--default 09:00am
-    //-     h3.lbh-u-h3 Date:
-    //-     p.lbh-u-p.lbh-u-p--default Monday, the 17th September 2018
-    //-     h3.lbh-u-h3 Location:
-    //-     p.lbh-u-p.lbh-u-p--default Hackney Town Hall, room 67
-    //-     p.lbh-u-p.lbh-u-p--default.train Hackney Central
-    //-     p.lbh-u-p.lbh-u-p--default.bus 48, 55, 106, 236, 254, 277
-    //-     a.button(href="https://goo.gl/maps/QxXFLWvKcyy") Map
-    //-     p.lbh-u-p.lbh-u-p--small Go to reception, they will be expecting you
-    //-     p.lbh-u-p.lbh-u-p--small Who to contact: Sally 020 8324 1234
-    //- section
-    //-   div.box
-    //-     h2.lbh-u-h2 Who you will meet after your induction
-    //-     div.user
-    //-       div.user-image
-    //-         img(src="./assets/images/user.svg")
-          
-    //-       table
-    //-         caption Ali Simms
-    //-         tbody
-    //-           tr
-    //-             th Where to meet:
-    //-             td Hackney Service Centre
-    //-           tr
-    //-             th When:
-    //-             td 12:00
-    //-           tr
-    //-             th Contact number:
-    //-             td 020 8324 1234
-    //-     p.lbh-u-p.lbh-u-p--small Someone from your team will meet you after your induction.
-    //-     p.lbh-u-p.lbh-u-p--small They will be around to help you on your first day.
-    //- section
-    //-   div.box
-    //-     h2.lbh-u-h2 Your manager
-    //-     div.user
-    //-       div.user-image
-    //-         img(src="./assets/images/user.svg")
-          
-    //-       table
-    //-         caption Ali Simms
-    //-         tbody
-    //-           tr
-    //-             th Contact number:
-    //-             td 020 8324 1234
-    //-     p.lbh-u-p.lbh-u-p--small Hope you enjoyed your induction.
-    //-     p.lbh-u-p.lbh-u-p--small Here’s some more information for your first day.
-    //- section
-    //-   div.box
-    //-     h2.lbh-u-h2 ID badge
-    //-     h3.lbh-u-h3 Reference number:
-    //-     p.lbh-u-p.lbh-u-p--default 2356451
-    //-     p.lbh-u-p.lbh-u-p--small 
-    //-       | Go to the ID unit on the Ground Floor of 
-    //-       a.link(href="https://goo.gl/maps/QxXFLWvKcyy") Hackney Service Centre 
-    //-       | with your reference number.
-    //-     p.lbh-u-p.lbh-u-p--small Cards are issued 9:30am - 11:00am and 3pm - 4:20pm Monday to Friday.
-    //-     p.lbh-u-p.lbh-u-p--small To save time, call 5511 to book an appointment.
-    //- section
-    //-   div.box
-    //-     h2.lbh-u-h2 IT login
-    //-     h3.lbh-u-h3 Username:
-    //-     p.lbh-u-p.lbh-u-p--default InitialSurname
-    //-     h3.lbh-u-h3 Password:
-    //-     p.lbh-u-p.lbh-u-p--default Hackney01
-    //-     p.lbh-u-p.lbh-u-p--small 
-    //-       | Use your IT login to access 
-    //-       a.link(href="https://gsuite.google.co.uk/intl/en_uk/") G Suite
-    //-       | , including your email.
-    //-     p.lbh-u-p.lbh-u-p--small You will be prompted to change your password.
-    //-     p.lbh-u-p.lbh-u-p--small Call 7777 for help with any IT issues.
-    //- section
-    //-   div.box
-    //-     h2.lbh-u-h2 Wi-Fi
-    //-     h3.lbh-u-h3 Public:
-    //-     p.lbh-u-p.lbh-u-p--default Hackney WIFI for All
-    //-     h3.lbh-u-h3 Staff:
-    //-     p.lbh-u-p.lbh-u-p--default Hackney Laptop
-    //-     p.lbh-u-p.lbh-u-p--small Use the public Wi-Fi until your device is set up for the staff Wi-Fi.
+    section#shoreditch
+      div.box
+        h2.lbh-u-h2 Shoreditch Library rooms
+        p.lbh-u-p.lbh-u-p--default Three rooms with Wi-Fi from X per hour. Available Monday to Saturday.
+        table
+            caption Small meeting room:
+            tbody
+              tr
+                td Up to 12 people
+              tr
+                td Not suitable for confidential meetings
+        table
+            caption Medium sized meeting room:
+            tbody
+              tr
+                td Up to 25 people seated or 35 standing
+              tr
+                td Not suitable for confidential meetings or noisy events
+        table
+            caption Small classroom:
+            tbody
+              tr
+                td Up to 11 people
+              tr
+                td 11 computers
+              tr
+                td Large whiteboard with pens
+              tr
+                td No food and drink allowed
+        a.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfr6TJo50oeOkpPmGGE6aexBRzUGQJ7Ne4Vt2Bk_wVVdrXtjA/viewform") Book a room
+        h3.lbh-u-h3 Location:
+        p.lbh-u-p.lbh-u-p--default 80 Hoxton Street, #[br] N1 6LP
+        p.lbh-u-p.lbh-u-p--small For more information, including opening times see #[a(href="https://hackney.gov.uk/shoreditch-library") Shoreditch Library].
+    section#dalston
+      div.box
+        h2.lbh-u-h2 Dalston CLR James Library room
+        p.lbh-u-p.lbh-u-p--default Second floor room from X per hour. Available at weekends.
+        table
+            caption Size:
+            tbody
+              tr
+                td 35 standing
+              tr
+                td 20 seated with tables
+        table
+            caption Facilities include:
+            tbody
+              tr
+                td Small kitchen with fridge, kettle and sink
+              tr
+                td Projector
+              tr
+                td Wi-Fi with library card
+        a.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfr6TJo50oeOkpPmGGE6aexBRzUGQJ7Ne4Vt2Bk_wVVdrXtjA/viewform") Book a room
+        h3.lbh-u-h3 Location:
+        p.lbh-u-p.lbh-u-p--default Dalston Square, #[br] Dalston, #[br] E8 3BQ
+        p.lbh-u-p.lbh-u-p--small For more information, including opening times see #[a(href="https://hackney.gov.uk/dalston-library") Dalston CLR James Library].
+    section#stamford
+      div.box
+        h2.lbh-u-h2 Stamford Hill Library hall
+        table
+            caption Hall for meetings and events:
+            tbody
+              tr
+                td From X per hour
+              tr
+                td Up to 80 people
+              tr
+                td Available Monday to Sunday
+        a.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfr6TJo50oeOkpPmGGE6aexBRzUGQJ7Ne4Vt2Bk_wVVdrXtjA/viewform") Book a room
+        h3.lbh-u-h3 Location:
+        p.lbh-u-p.lbh-u-p--default Portland Avenue, #[br] N16 6SB
+        p.lbh-u-p.lbh-u-p--small For more information, including opening times see #[a(href="https://hackney.gov.uk/stamford-hill-library") Stamford Hill Library].
+    section#homerton
+      div.box
+        h2.lbh-u-h2 Homerton Library rooms
+        p.lbh-u-p.lbh-u-p--default Two rooms for meetings and events with Wi-Fi. Available Monday to Saturday.
+        table
+            caption Small room:
+            tbody
+              tr
+                td Up to 8 people
+              tr
+                td From X per hour
+        table
+            caption Large room:
+            tbody
+              tr
+                td Up to 100 people
+              tr
+                td From X per hour
+              tr
+                td Kitchen with kettle, fridge, microwave and sink
+              tr
+                td Projector
+        a.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfr6TJo50oeOkpPmGGE6aexBRzUGQJ7Ne4Vt2Bk_wVVdrXtjA/viewform") Book a room
+        h3.lbh-u-h3 Location:
+        p.lbh-u-p.lbh-u-p--default Homerton High Street, #[br] E9 6AS
+        p.lbh-u-p.lbh-u-p--small For more information, including opening times see #[a(href="https://hackney.gov.uk/homerton-library") Homerton Library].
+    section#stoke
+      div.box
+        h2.lbh-u-h2 Stoke Newington Library rooms
+        p.lbh-u-p.lbh-u-p--default Two rooms for meetings and events with Wi-Fi. Available Monday to Sunday.
+        table
+            caption Small room:
+            tbody
+              tr
+                td Up to 25 people
+              tr
+                td Ground floor
+              tr
+                td Wheelchair access
+        table
+            caption Large room:
+            tbody
+              tr
+                td Up to 130 standing or 60 seated
+              tr
+                td Suitable for art exhibitions and rehearsals - includes small stage area
+              tr
+                td Not suitable for noisey events such as parties
+              tr
+                td Events where alcohol or tickets are sold not allowed
+        a.button(href="https://docs.google.com/forms/d/e/1FAIpQLSfr6TJo50oeOkpPmGGE6aexBRzUGQJ7Ne4Vt2Bk_wVVdrXtjA/viewform") Book a room
+        h3.lbh-u-h3 Location:
+        p.lbh-u-p.lbh-u-p--default Stoke Newington Church Street, #[br] N16 0JS
+        p.lbh-u-p.lbh-u-p--small For more information, including opening times see #[a(href="https://hackney.gov.uk/stoke-newington-library") Stoke Newington Library].
