@@ -8,7 +8,8 @@
 
 .main header,
 .main section,
-.main aside {
+.main aside,
+.govuk-phase-banner__content {
     padding: 0 1rem;
 }
 
@@ -27,7 +28,6 @@
 }
 
 .map {
-    margin-top: 50px;
     min-height: 1160px;
     height: 100%;
     width: 100%;

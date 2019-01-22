@@ -95,7 +95,122 @@ ul {
   background-size: 16px 20px;
   margin-bottom: 26px;
   display: inline-block;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 0 #003d2f;
+  position: relative;
 }
+
+.button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -4px;
+  left: -2px;
+  background: transparent;
+}
+
+.button:hover {
+  background-color: #005240;
+}
+
+.button:focus {
+  outline: 3px solid #ffc847;
+  outline-offset: 0;
+}
+
+.button:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.button:active:before {
+  top: -4px;
+}
+
+/* .lbh-button {
+  background-color: var(--background-button);
+  color: var(--colour-button);
+  border: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 9px 12px 6px;
+  line-height: 1;
+  box-shadow: 0 2px 0 var(--shadow-button);
+  display: inline-block;
+  margin-bottom: calc(var(--spacing-main) * 2);
+  position: relative;
+  font-size: 100%;
+}
+
+.lbh-button--secondary {
+  border: 2px solid var(--background-button);
+  background-color: var(--background-button-secondary);
+  color: var(--colour-main);
+}
+
+.lbh-button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -4px;
+  left: -2px;
+  background: transparent;
+}
+
+.lbh-button[disabled],
+.lbh-button--disabled {
+  background-color: var(--background-button-disabled);
+  box-shadow: 0 2px 0 var(--shadow-button-disabled);
+  cursor: default;
+}
+
+.lbh-button[disabled].lbh-button--secondary,
+.lbh-button--disabled.lbh-button--secondary {
+  background-color: var(--background-button-secondary-disabled);
+}
+
+.lbh-button--arrow {
+  font-weight: 700;
+  padding: 12px 42px 8px 16px;
+}
+
+.lbh-button--arrow .lbh-icon--arrow {
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  right: var(--spacing-main);
+  top: 10px;
+}
+
+.lbh-button--secondary .lbh-icon--arrow path:first-child {
+  fill: var(--colour-main);
+}
+
+.lbh-button:not([disabled]):not(.lbh-button--disabled):hover {
+  background-color: var(--hover-button);
+}
+
+.lbh-button--secondary:not([disabled]):not(.lbh-button--disabled):hover {
+  background-color: var(--hover-button-secondary);
+}
+
+.lbh-button:not([disabled]):not(.lbh-button--disabled):focus {
+  outline: 3px solid var(--focus-button);
+  outline-offset: 0;
+}
+
+.lbh-button:not([disabled]):not(.lbh-button--disabled):active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.lbh-button:not([disabled]):not(.lbh-button--disabled):active:before {
+  top: -4px;
+} */
 
 section .button {
   margin-bottom: 1px;
@@ -163,23 +278,48 @@ td {
   padding-right: 0;
 }
 
-.train {
-  background-image: url(./assets/images/train.svg);
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
-  background-size: 16px 20px;
-  padding-left: 32px;
-}
-
-.bus {
-  background-image: url(./assets/images/bus.svg);
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
-  background-size: 16px 20px;
-  padding-left: 32px;
-}
-
 .link {
   color: #00664F;
+}
+
+.img {
+  width: 100%;
+  max-width: 100%;
+  height: 480px;
+  min-width: 100%;
+  min-height: 100%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+}
+
+@media (max-width: 720px) {
+  .img {
+    height: 240px;
+  }
+}
+
+#clapton .img {
+  background-image: url(./assets/images/clapton.jpg);
+}
+
+#shoreditch .img {
+  background-image: url(./assets/images/shoreditch.jpg);
+}
+
+#dalston .img {
+  background-image: url(./assets/images/dalston.jpg);
+}
+
+#stamford .img {
+  background-image: url(./assets/images/stamford.jpg);
+}
+
+#homerton .img {
+  background-image: url(./assets/images/homerton.jpg);
+}
+
+#stoke .img {
+  background-image: url(./assets/images/stoke.jpg);
 }
 
