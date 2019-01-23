@@ -100,6 +100,13 @@ ul {
   position: relative;
 }
 
+@media (max-width: 720px) {
+  .button {
+    width: 100%;
+    background-position: 97% 50%;
+  }
+}
+
 .button:before {
   content: "";
   display: block;
@@ -128,89 +135,6 @@ ul {
 .button:active:before {
   top: -4px;
 }
-
-/* .lbh-button {
-  background-color: var(--background-button);
-  color: var(--colour-button);
-  border: 2px solid transparent;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 9px 12px 6px;
-  line-height: 1;
-  box-shadow: 0 2px 0 var(--shadow-button);
-  display: inline-block;
-  margin-bottom: calc(var(--spacing-main) * 2);
-  position: relative;
-  font-size: 100%;
-}
-
-.lbh-button--secondary {
-  border: 2px solid var(--background-button);
-  background-color: var(--background-button-secondary);
-  color: var(--colour-main);
-}
-
-.lbh-button:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -4px;
-  left: -2px;
-  background: transparent;
-}
-
-.lbh-button[disabled],
-.lbh-button--disabled {
-  background-color: var(--background-button-disabled);
-  box-shadow: 0 2px 0 var(--shadow-button-disabled);
-  cursor: default;
-}
-
-.lbh-button[disabled].lbh-button--secondary,
-.lbh-button--disabled.lbh-button--secondary {
-  background-color: var(--background-button-secondary-disabled);
-}
-
-.lbh-button--arrow {
-  font-weight: 700;
-  padding: 12px 42px 8px 16px;
-}
-
-.lbh-button--arrow .lbh-icon--arrow {
-  width: 16px;
-  height: 20px;
-  position: absolute;
-  right: var(--spacing-main);
-  top: 10px;
-}
-
-.lbh-button--secondary .lbh-icon--arrow path:first-child {
-  fill: var(--colour-main);
-}
-
-.lbh-button:not([disabled]):not(.lbh-button--disabled):hover {
-  background-color: var(--hover-button);
-}
-
-.lbh-button--secondary:not([disabled]):not(.lbh-button--disabled):hover {
-  background-color: var(--hover-button-secondary);
-}
-
-.lbh-button:not([disabled]):not(.lbh-button--disabled):focus {
-  outline: 3px solid var(--focus-button);
-  outline-offset: 0;
-}
-
-.lbh-button:not([disabled]):not(.lbh-button--disabled):active {
-  top: 2px;
-  box-shadow: none;
-}
-
-.lbh-button:not([disabled]):not(.lbh-button--disabled):active:before {
-  top: -4px;
-} */
 
 section .button {
   margin-bottom: 1px;

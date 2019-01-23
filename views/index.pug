@@ -1,6 +1,11 @@
 doctype html
 html(lang='en' dir='ltr')
-  include components/head.pug
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Book a library room
+    include components/favicon.pug
+    include components/style.pug
   body
     //- include components/nav.pug
     include components/header.pug
