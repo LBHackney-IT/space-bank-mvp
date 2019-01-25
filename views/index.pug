@@ -9,7 +9,11 @@ html(lang='en' dir='ltr')
   body
     //- include components/nav.pug
     include components/header.pug
-    include components/banner.pug
+    div.govuk-phase-banner
+    div.wrapper
+        p.govuk-phase-banner__content
+            strong.govuk-tag alpha
+            span.govuk-phase-banner__text This is a new service – your #[a.govuk-link(href="https://docs.google.com/forms/d/e/1FAIpQLSe3B_mZMryjMJe16Yz2I3KUzyyy6Z4-UWNOI39MsHueBLyAUw/viewform") feedback] will help us to improve it.
     include components/main.pug
     include components/footer.pug
     include components/script.pug
